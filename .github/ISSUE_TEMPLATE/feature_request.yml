@@ -1,0 +1,16 @@
+name: Idea / feature
+description: Suggest something cool
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should it do, and why would it be fun or useful?
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Starter prompt (optional)
+      description: If you handed this to an agent, what would you tell it?
