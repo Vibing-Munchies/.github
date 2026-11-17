@@ -1,52 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <title>Vibing Munchies</title>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2b1055"/>
-      <stop offset="1" stop-color="#5b5fd6"/>
-    </linearGradient>
-    <radialGradient id="floret" cx="0.4" cy="0.3" r="0.75">
-      <stop offset="0" stop-color="#9be15d"/>
-      <stop offset="1" stop-color="#2e8b3a"/>
-    </radialGradient>
-    <linearGradient id="stalk" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#c4ec9a"/>
-      <stop offset="1" stop-color="#86c75a"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="512" height="512" fill="url(#bg)"/>
-
-  <g fill="#ffd23f">
-    <path d="M86 120l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/>
-    <path d="M420 300l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
-    <path d="M410 86l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+  <rect width="512" height="512" fill="#0f1411"/>
+  <g fill="#b4f461">
+    <circle cx="146" cy="238" r="50"/>
+    <circle cx="366" cy="238" r="50"/>
+    <circle cx="196" cy="178" r="62"/>
+    <circle cx="316" cy="178" r="62"/>
+    <circle cx="256" cy="150" r="64"/>
+    <circle cx="256" cy="226" r="72"/>
+    <circle cx="200" cy="254" r="44"/>
+    <circle cx="312" cy="254" r="44"/>
+    <path d="M200 270H312L294 392Q290 420 262 420H250Q222 420 218 392Z"/>
+    <path d="M412 88C415 102 418 105 432 108C418 111 415 114 412 128C409 114 406 111 392 108C406 105 409 102 412 88Z"/>
   </g>
-
-  <line x1="256" y1="112" x2="256" y2="70" stroke="#c4ec9a" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="256" cy="60" r="14" fill="#ffd23f"/>
-
-  <path d="M180 250H332L318 424Q316 452 288 452H224Q196 452 194 424Z" fill="url(#stalk)"/>
-
-  <g fill="url(#floret)">
-    <circle cx="170" cy="212" r="58"/>
-    <circle cx="342" cy="212" r="58"/>
-    <circle cx="214" cy="160" r="66"/>
-    <circle cx="298" cy="160" r="66"/>
-    <circle cx="256" cy="214" r="70"/>
-  </g>
-  <g fill="#2e8b3a" opacity="0.45">
-    <circle cx="200" cy="140" r="10"/>
-    <circle cx="300" cy="128" r="8"/>
-    <circle cx="150" cy="222" r="9"/>
-    <circle cx="352" cy="230" r="10"/>
-    <circle cx="262" cy="240" r="9"/>
-    <circle cx="236" cy="190" r="7"/>
-    <circle cx="322" cy="184" r="7"/>
-  </g>
-
-  <rect x="196" y="304" width="120" height="52" rx="26" fill="#14142b"/>
-  <circle cx="232" cy="330" r="11" fill="#5ef2ff"/>
-  <circle cx="280" cy="330" r="11" fill="#5ef2ff"/>
-  <path d="M236 386Q256 404 276 386" fill="none" stroke="#3f7f26" stroke-width="7" stroke-linecap="round"/>
+  <path d="M256 168C261 194 264 197 290 202C264 207 261 210 256 236C251 210 248 207 222 202C248 197 251 194 256 168Z" fill="#0f1411"/>
 </svg>
