@@ -15,4 +15,3 @@ Vibing Munchies is a friends-only org: every member has write access to every re
 1. `gh repo create Vibing-Munchies/<name> --private --clone`
 2. Add a README: what it does, how to run it, which agent/model built it.
 3. Add a LICENSE if you ever plan to share it outside the org.
-4. Add a row to the project table in [`.github-private/profile/README.md`](https://github.com/Vibing-Munchies/.github-private/blob/main/profile/README.md).
