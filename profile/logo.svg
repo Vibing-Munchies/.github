@@ -1,56 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vibing Munchies">
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8b5cf6"/>
-      <stop offset="1" stop-color="#4c1d95"/>
+      <stop offset="0" stop-color="#ffedd5"/>
+      <stop offset="1" stop-color="#fbcfe8"/>
     </linearGradient>
-    <linearGradient id="florets" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="0" y2="74">
-      <stop offset="0" stop-color="#86efac"/>
-      <stop offset="1" stop-color="#16a34a"/>
-    </linearGradient>
-    <linearGradient id="stalk" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#dcfce7"/>
-      <stop offset="1" stop-color="#bbf7d0"/>
-    </linearGradient>
+    <radialGradient id="dough" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#fbe3bf"/>
+      <stop offset="1" stop-color="#eec08e"/>
+    </radialGradient>
     <mask id="bite">
       <rect width="128" height="128" fill="#fff"/>
-      <circle cx="93" cy="29" r="10" fill="#000"/>
-      <circle cx="97" cy="43" r="9" fill="#000"/>
+      <circle cx="102" cy="34" r="12" fill="#000"/>
+      <circle cx="108" cy="51" r="10" fill="#000"/>
     </mask>
   </defs>
 
   <rect width="128" height="128" rx="28" fill="url(#background)"/>
 
-  <!-- crumbs flying from the bite -->
-  <g fill="#bbf7d0">
-    <circle cx="111" cy="40" r="3.5"/>
-    <circle cx="117" cy="52" r="2"/>
-    <circle cx="109" cy="27" r="2"/>
+  <!-- cookie with a bite taken out -->
+  <g mask="url(#bite)">
+    <circle cx="64" cy="64" r="42" fill="url(#dough)"/>
+    <g fill="#b98e6e" opacity="0.75">
+      <circle cx="48" cy="44" r="5"/>
+      <circle cx="72" cy="40" r="4"/>
+      <circle cx="40" cy="68" r="4.5"/>
+      <circle cx="62" cy="62" r="5.5"/>
+      <circle cx="84" cy="66" r="4"/>
+      <circle cx="54" cy="88" r="4.5"/>
+      <circle cx="78" cy="86" r="5"/>
+    </g>
   </g>
 
-  <!-- broccoli, leaning right, with a bite taken out of the crown -->
-  <g transform="rotate(20 64 64)" mask="url(#bite)">
-    <path d="M51 60H77L72 96Q71 104 64 104Q57 104 56 96Z" fill="url(#stalk)"/>
-    <g fill="url(#florets)">
-      <circle cx="46" cy="52" r="15"/>
-      <circle cx="82" cy="52" r="15"/>
-      <circle cx="55" cy="38" r="16"/>
-      <circle cx="74" cy="36" r="16"/>
-      <circle cx="64" cy="54" r="19"/>
-    </g>
-    <g fill="#15803d" opacity="0.35">
-      <circle cx="51" cy="34" r="1.4"/>
-      <circle cx="41" cy="53" r="1.4"/>
-      <circle cx="66" cy="46" r="1.4"/>
-      <circle cx="78" cy="58" r="1.4"/>
-    </g>
-    <path d="M64 76V96" stroke="#86efac" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- crumbs -->
+  <g fill="#eec08e">
+    <circle cx="115" cy="66" r="3"/>
+    <circle cx="118" cy="50" r="2"/>
+    <circle cx="112" cy="78" r="1.8"/>
   </g>
 
   <!-- sparkles -->
-  <g fill="#f8fafc">
-    <path d="M26 14Q26 24 36 24Q26 24 26 34Q26 24 16 24Q26 24 26 14Z"/>
-    <path d="M100 88Q100 96 108 96Q100 96 100 104Q100 96 92 96Q100 96 100 88Z"/>
-    <path d="M30 92Q30 97 35 97Q30 97 30 102Q30 97 25 97Q30 97 30 92Z" opacity="0.8"/>
+  <g fill="#f9a8d4">
+    <path d="M24 15Q24 24 33 24Q24 24 24 33Q24 24 15 24Q24 24 24 15Z"/>
+    <path d="M30 98Q30 104 36 104Q30 104 30 110Q30 104 24 104Q30 104 30 98Z"/>
   </g>
 </svg>
