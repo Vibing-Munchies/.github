@@ -1,17 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <title>Vibing Munchies</title>
-  <rect width="512" height="512" fill="#0f1411"/>
-  <g fill="#b4f461">
-    <circle cx="146" cy="238" r="50"/>
-    <circle cx="366" cy="238" r="50"/>
-    <circle cx="196" cy="178" r="62"/>
-    <circle cx="316" cy="178" r="62"/>
-    <circle cx="256" cy="150" r="64"/>
-    <circle cx="256" cy="226" r="72"/>
-    <circle cx="200" cy="254" r="44"/>
-    <circle cx="312" cy="254" r="44"/>
-    <path d="M200 270H312L294 392Q290 420 262 420H250Q222 420 218 392Z"/>
-    <path d="M412 88C415 102 418 105 432 108C418 111 415 114 412 128C409 114 406 111 392 108C406 105 409 102 412 88Z"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#2fe07a"/>
+      <stop offset="0.5" stop-color="#14b85a"/>
+      <stop offset="1" stop-color="#0a8a45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.15" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="prompt">
+      <rect width="512" height="512" fill="#fff"/>
+      <g fill="none" stroke="#000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M196 196L236 226L196 256"/>
+        <path d="M262 256H314"/>
+      </g>
+    </mask>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+
+  <g fill="#f4fbf2" mask="url(#prompt)" transform="translate(256 290) scale(1.18) translate(-256 -230)">
+    <circle cx="186" cy="168" r="60"/>
+    <circle cx="256" cy="146" r="68"/>
+    <circle cx="326" cy="168" r="60"/>
+    <circle cx="126" cy="236" r="58"/>
+    <circle cx="386" cy="236" r="58"/>
+    <circle cx="186" cy="270" r="54"/>
+    <circle cx="326" cy="270" r="54"/>
+    <circle cx="256" cy="230" r="90"/>
+    <path d="M168 296H344Q306 324 306 372L316 512H196L206 372Q206 324 168 296Z"/>
   </g>
-  <path d="M256 168C261 194 264 197 290 202C264 207 261 210 256 236C251 210 248 207 222 202C248 197 251 194 256 168Z" fill="#0f1411"/>
 </svg>
